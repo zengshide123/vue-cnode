@@ -1,23 +1,23 @@
 # vue-cnode
 
- tags: [vue,cnode]
+    主要使用vue全家桶和iview来展示cnode
 
 ## 1.环境调试
 
  - iview组件库 按需引入
-```
-    npm install babel-plugin-import --save-dev
+        ```
+            npm install babel-plugin-import --save-dev
 
-    //babel.config.js
-    {
-    "plugins": [["import", {
-        "libraryName": "iview",
-        "libraryDirectory": "src/components"
-    }]]
-    }
-    //main.js
-    import 'iview/dist/styles/iview.css'
-```
+            //babel.config.js
+            {
+            "plugins": [["import", {
+                "libraryName": "iview",
+                "libraryDirectory": "src/components"
+            }]]
+            }
+            //main.js
+            import 'iview/dist/styles/iview.css'
+        ```
   - iview定制主题
 
     - 新建theme文件夹
