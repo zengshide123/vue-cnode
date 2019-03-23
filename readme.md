@@ -32,5 +32,5 @@
         //main.js
         import './theme/index.less';
       ```
-      > 保证less版本在3一下,全局和局部iview只能选择一种
+      > 保证less版本在3以下,全局和局部iview只能选择一种
       
