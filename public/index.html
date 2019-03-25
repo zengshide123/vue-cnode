@@ -5,7 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1104129_6a52imkbpsi.css">
     <title>vue-cnode</title>
+    <style>
+        #loading{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, .1);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #loading .load_wrap{
+            animation: mymove 2s linear infinite;
+        }
+        #loading .title{
+            font-size: 14px;
+            margin-top: 15px;
+            color: #000;
+        }
+        @keyframes mymove
+                {
+                    0%{
+                       transform: rotate(0deg) scale(2)
+                    }
+                    50%{
+                        transform: rotate(180deg) scale(2)
+                    }
+                    100%{
+                        transform: rotate(360deg) scale(2)
+                    }
+                }
+    </style>
   </head>
   <body>
     <noscript>
@@ -13,5 +49,15 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <!-- loading -->
+    <div id="loading">
+        <div class="load_wrap">
+            <span class="iconfont iconLoading"></span>           
+        </div>
+            <div  class="title">加载中...</div>
+    </div>
+    <script>
+        document.body.addEventListener('touchstart', function(){});
+    </script>
   </body>
 </html>

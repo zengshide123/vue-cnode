@@ -1,3 +1,121 @@
+@import "./normalize.less";
+@import './github.markdown.less';
 @import '~iview/src/styles/index.less';
 
-@primary-color: #8c0776;
+// @primary-color: #8c0776;
+
+// 修改cell组件样式
+.indexall_wrap .ivu-cell-main{
+    width: calc(~"100% -"50px);
+}
+.reply .ivu-cell-main{
+    width: 100%;
+}
+.reply .ivu-card-body{
+    padding: 0;
+}
+.reply .ivu-card-head{
+    padding: 10px;
+}
+.reply .ivu-cell{
+    padding: 5px;
+    p{
+        font-size: 12px;
+        padding: 0 5px;
+        line-height: 1.4;
+    }
+}
+.usercentr_wrap .ivu-cell-main{
+    width: calc(~"100% -"20px)
+}
+.detail_wrap .content .markdown-text img{
+    display: inline-block;
+}
+.header_wrap .ivu-menu-submenu-title{
+    padding: 5px ;
+}
+.header_wrap .ivu-menu-submenu-title li,.header_wrap .ivu-menu-item{
+    padding:5px 0!important;
+}
+.header_wrap .ivu-menu-submenu-title .ivu-menu-submenu-title-icon{
+    float: none;
+    z-index: 6;
+    top: 0;
+    left: 4px;
+}
+.new_user_wrap a{
+    white-space: normal;
+    word-break: break-all;
+    text-indent: 2em;
+    display: block;
+}
+@media screen and (max-width: 576px) {
+    .ivu-page-item:hover{
+        border-color:#dcdee2;
+        a{
+            color: #515a6e;
+        }
+    }
+    .ivu-page-item.ivu-page-item-active{
+        border-color:#2d8cf0;
+        a{
+            color: #2d8cf0;
+        } 
+    }
+}
+// 定义mark-text样式
+.markdown-text{
+    p{
+        font-size: 14px;
+        text-indent:2em; 
+        line-height: 1.2; 
+        word-break: break-all;  
+        white-space: normal;
+        padding: 5px 10px;
+        margin: 0;
+        color: rgb(117, 116, 116);
+    }
+    a{
+        word-break: break-all;
+    }
+    img{
+        width: calc(~"100% -"30px);
+        max-width: 500px;
+    }  
+    pre {
+        p{
+          color: #000;   
+        }
+        pre{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    h1,h2,h3,h4,h5,h6{
+        color: rgb(121, 120, 120);
+        font-weight: bolder;
+        margin: 15px;
+    } 
+    li{
+      color: rgb(121, 120, 120);
+      white-space: normal;
+      word-break: break-all;
+      font-size: 14px;
+    } 
+    strong{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    h2{
+        font-size: 14px;
+        line-height: 1.6
+    }
+    h3,h5,h6{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+}
