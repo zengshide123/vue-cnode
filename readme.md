@@ -45,6 +45,16 @@
   - 使用config来定义一些数据配置
   - 考虑到返回数据有md的文件,使用相应的vue-markdown进行了处理。然而效果不如意,引入了github的md.css文件,自身在定义了一些样式。
   
+## 3.项目地址
+
+>    [vue-cnode](https://zengshide123.github.io/display-cnode/)
+
+     移动端二维码地址:
+
+     ![移动端二维码](https://github.com/zengshide123/vue-cnode/link.png)
+
+    
+
 
 
 
