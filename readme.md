@@ -44,6 +44,14 @@
   - 考虑到响应式,在布局空间过小时，将nav和sidebar全部放入toggle中
   - 使用config来定义一些数据配置
   - 考虑到返回数据有md的文件,使用相应的vue-markdown进行了处理。然而效果不如意,引入了github的md.css文件,自身在定义了一些样式。
+  - 关于打包部署github pages的一点小改动,需要在vue.config.js配置。
+  ```
+    module.exports = {
+            publicPath: process.env.NODE_ENV === 'production'
+            ? './'
+            : '/',
+        }
+  ```
   
 ## 3.项目地址
 
