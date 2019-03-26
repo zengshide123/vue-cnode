@@ -51,7 +51,7 @@
 
      移动端二维码地址:
 
-     ![移动端二维码](https://github.com/zengshide123/vue-cnode/link.png)
+     ![移动端二维码](https://github.com/zengshide123/vue-cnode/raw/master/link.png)
 
     
 
